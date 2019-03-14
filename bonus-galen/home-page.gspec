@@ -1,0 +1,43 @@
+@objects
+  header header
+    container div.container
+      logo img
+
+  mainnav #main-nav
+    ul ul#menu-nav-menu
+      li .menu-item
+  
+  banners #who-we-are
+    banner .hero-banner
+      message .header-top
+
+  collage .image-collage-2
+    main .main-image
+      image .image
+    secondary .image-wrapper
+      images div > .img
+
+= Header Section =
+  header:
+    height 50 to 100px
+    
+  header.container.logo:
+    centered vertically inside header
+
+= Nav Section =
+  mainnav.ul:
+    aligned vertically right header.container
+    aligned horizontally all header.container
+  
+  mainnav.ul.li:
+    aligned horizontally top header
+
+= Banner Section =
+  banners.banner:
+    width 100% of viewport/width
+  banners.banner.message:
+    %absent
+
+= Collage Section =
+  collage.secondary.images:
+    %absent
